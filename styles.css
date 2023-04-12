@@ -3,11 +3,18 @@
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 12px;
-  color: var(--main-text-clr);
+  color: var(--content-text-clr);
 }
 
 :html {
-  --main-text-clr: #989898;
+  --content-text-clr: #989898;
+  --headings-text-clr: #131313;
+  --aside-text-clr: #fff;
+
+  --aside-bg-clr: #1992d4;
+  --main-bg-clr: #e2e8f0;
+  --content-bg-clr: #e2e8f0;
+  --card-side-clr: #f0b429;
 }
 
 .bold {
