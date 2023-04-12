@@ -1,4 +1,9 @@
+/* Setup styles */
+
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
@@ -6,17 +11,46 @@
   color: var(--content-text-clr);
 }
 
-:html {
+:root {
   --content-text-clr: #989898;
   --headings-text-clr: #131313;
   --aside-text-clr: #fff;
 
   --aside-bg-clr: #1992d4;
   --main-bg-clr: #e2e8f0;
-  --content-bg-clr: #e2e8f0;
+  --content-bg-clr: #fff;
   --card-side-clr: #f0b429;
 }
 
 .bold {
   font-weight: 700;
 }
+
+img {
+  aspect-ratio: 1/1;
+}
+
+/* Main elements styles */
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: min(25vw, 500px) 1fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+aside {
+  background-color: var(--aside-bg-clr);
+  grid-row: 1 / -1;
+}
+
+nav {
+  background-color: var(--content-bg-clr);
+}
+
+main {
+  background-color: var(--main-bg-clr);
+}
+
+/* Interactivity */
