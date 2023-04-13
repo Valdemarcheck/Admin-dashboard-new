@@ -1,4 +1,4 @@
-/* Setup styles */
+/* GENERAL STYLES */
 
 * {
   box-sizing: border-box;
@@ -46,7 +46,7 @@ li {
   list-style: none;
 }
 
-/* Main elements styles */
+/* LAYOUT STYLES */
 
 body {
   width: 100%;
@@ -189,7 +189,7 @@ main {
   background-color: var(--main-bg-clr);
 }
 
-/* Interactivity */
+/* INTERACTIVITY */
 
 .link-button:hover {
   cursor: pointer;
@@ -198,4 +198,30 @@ main {
 /* Remove default black outline on focus */
 input[type="search"]:focus-visible {
   outline: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+  body {
+    grid-template-columns: 40px 1fr;
+  }
+
+  aside {
+    align-items: center;
+  }
+
+  aside ul {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  aside ul li {
+    width: 20px;
+  }
+
+  aside ul li a,
+  h1 {
+    display: none;
+  }
 }
