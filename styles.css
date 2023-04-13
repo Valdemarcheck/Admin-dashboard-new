@@ -22,11 +22,16 @@
   --card-side-clr: #f0b429;
 
   --large-font-size: clamp(1rem, 2vw, 2rem);
+  --medium-font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
 
 .bold,
 .bold * {
   font-weight: 700;
+}
+
+.round {
+  border-radius: 50%;
 }
 
 img {
@@ -98,6 +103,86 @@ aside ul li {
 
 nav {
   background-color: var(--content-bg-clr);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5px;
+  padding: 5px max(5px, 7%);
+}
+
+nav * {
+  color: var(--headings-text-clr);
+}
+
+nav .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left,
+.right {
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  column-gap: 5%;
+}
+
+.left {
+  grid-template-columns: auto minmax(20%, 400px);
+  justify-content: start;
+}
+
+.left h2 {
+  font-size: var(--large-font-size);
+}
+.left .pfp {
+  height: 50%;
+}
+
+.right {
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+}
+
+.right .nickname {
+  font-size: var(--medium-font-size);
+}
+
+input[type="search"] {
+  background-color: var(--main-bg-clr);
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  width: 120%;
+  height: calc(var(--large-font-size) + 3px);
+  font-family: inherit;
+  padding: 5px;
+}
+
+/* Remove default search cancel button */
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+button[type="submit"] {
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+.link-button {
+  background-color: var(--aside-bg-clr);
+  border: none;
+  border-radius: 15px;
+  padding: max(7px, 0.5vw) clamp(2px, 3vw, 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-button a {
+  color: #e2e8f0;
+  font-size: 110%;
 }
 
 main {
@@ -105,3 +190,12 @@ main {
 }
 
 /* Interactivity */
+
+.link-button:hover {
+  cursor: pointer;
+}
+
+/* Remove default black outline on focus */
+input[type="search"]:focus-visible {
+  outline: none;
+}
