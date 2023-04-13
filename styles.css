@@ -53,7 +53,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: min(25vw, 300px) 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 aside {
