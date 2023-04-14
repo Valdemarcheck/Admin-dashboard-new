@@ -81,24 +81,30 @@ aside img {
   height: 90%;
 }
 
-.heading,
-aside ul {
-  display: block;
-  width: 100%;
+.heading img {
+  height: 100%;
 }
 
-aside ul {
+.heading,
+.aside-list {
+  display: block;
+  width: 90%;
+}
+
+.aside-list {
+  line-height: var(--large-font-size);
   display: grid;
-  grid-auto-rows: var(--large-font-size);
+  grid-auto-rows: 1.5lh;
   row-gap: calc(var(--large-font-size) / 1.5);
 }
 
 .heading,
-aside ul li {
+.aside-list li {
   display: grid;
   grid-template-columns: 30px 1fr;
-  column-gap: 10px;
+  column-gap: 5px;
   align-items: center;
+  background-color: red;
 }
 
 nav {
@@ -211,16 +217,16 @@ input[type="search"]:focus-visible {
     align-items: center;
   }
 
-  aside ul {
+  .aside-list {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
 
-  aside ul li {
+  .aside-list li {
     width: 20px;
   }
 
-  aside ul li a,
+  .aside-list li a,
   h1 {
     display: none;
   }
