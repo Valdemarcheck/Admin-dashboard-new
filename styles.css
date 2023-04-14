@@ -183,7 +183,8 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-button[type="submit"] {
+button[type="submit"],
+.action-button {
   appearance: none;
   background: none;
   border: none;
@@ -217,33 +218,33 @@ main * {
   color: var(--headings-text-clr);
 }
 
-main .column {
+.column {
   background-color: #ab6767;
   padding: 20px 10px;
   grid-template-columns: 1fr;
   row-gap: 15px;
 }
 
-main .column.left {
+.column.left {
   display: grid;
   grid-template-rows: var(--medium-font-size) 1fr;
 }
 
-main .column.right {
+.column.right {
   display: grid;
   grid-template-rows: var(--medium-font-size) 1fr var(--medium-font-size) 1fr;
   justify-items: center;
 }
 
-main .column.right > * {
+.column.right > * {
   width: min(100%, 300px);
 }
 
-main .column.right h2 {
+.column.right h2 {
   text-align: left;
 }
 
-main .column > div {
+.column > div {
   height: 100%;
 }
 
@@ -278,11 +279,6 @@ main .column > div {
   width: 100%;
 }
 
-.action-button {
-  background: none;
-  border: none;
-}
-
 .announcements-section,
 .trending-section {
   background-color: var(--aside-text-clr);
@@ -315,7 +311,7 @@ main .column > div {
   height: 70%;
 }
 
-.trending-section .vertical p:first-child {
+.vertical .black {
   color: var(--headings-text-clr);
   font-size: calc(var(--medium-font-size) - 2px);
 }
