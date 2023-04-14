@@ -122,8 +122,8 @@ aside img {
 .aside-list li {
   display: grid;
   grid-template-columns: 30px 1fr;
-  column-gap: 5px;
   align-items: center;
+  column-gap: 0.5lh;
 }
 
 nav {
