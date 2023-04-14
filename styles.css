@@ -221,7 +221,6 @@ main * {
 }
 
 .column {
-  background-color: #ab6767;
   padding: 20px 10px;
   grid-template-columns: 1fr;
   row-gap: 15px;
