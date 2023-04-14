@@ -21,7 +21,7 @@
   --content-bg-clr: #fff;
   --card-side-clr: #f0b429;
 
-  --large-font-size: clamp(1rem, 2vw, 2rem);
+  --large-font-size: clamp(1rem, 2vw, 1.8rem);
   --medium-font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
 
@@ -44,6 +44,14 @@ a {
 
 li {
   list-style: none;
+}
+
+h2 {
+  font-size: var(--large-font-size);
+}
+
+h3 {
+  font-size: var(--medium-font-size);
 }
 
 /* LAYOUT STYLES */
@@ -137,10 +145,12 @@ nav .row {
   justify-content: start;
 }
 
-.left h2 {
-  margin-top: 5px;
-  font-size: var(--large-font-size);
+.left .vertical {
+  display: grid;
+  grid-template-rows: var(--large-font-size);
+  align-items: center;
 }
+
 .left .pfp {
   height: 50%;
 }
@@ -148,10 +158,6 @@ nav .row {
 .right {
   grid-template-columns: repeat(3, auto);
   justify-content: end;
-}
-
-.right .nickname {
-  font-size: var(--medium-font-size);
 }
 
 input[type="search"] {
@@ -194,11 +200,83 @@ button[type="submit"] {
 
 main {
   background-color: var(--main-bg-clr);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+  padding: 3vh 10px;
+}
+
+main * {
+  color: var(--headings-text-clr);
+}
+
+main .column {
+  background-color: #ab6767;
+  padding: 20px 10px;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+
+main .column.left {
+  display: grid;
+  grid-template-rows: var(--medium-font-size) 1fr;
+}
+
+main .column.right {
+  display: grid;
+  grid-template-rows: var(--medium-font-size) 1fr var(--medium-font-size) 1fr;
+}
+
+main .column > div {
+  background-color: #1992d4;
+  height: 100%;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 180px;
+  gap: 5px;
+}
+
+.cards-section .card {
+  background-color: var(--aside-text-clr);
+  border-left: 7px solid var(--card-side-clr);
+  border-radius: 8px;
+  padding: 5%;
+
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.cards-section .card p {
+  color: var(--content-text-clr);
+  max-width: 80%;
+  margin-top: 5px;
+}
+
+.cards-section .card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  column-gap: 30px;
+  justify-content: end;
+  align-self: end;
+}
+
+.action-button img {
+  width: 100%;
+}
+
+.action-button {
+  background: none;
+  border: none;
 }
 
 /* INTERACTIVITY */
 
-.link-button:hover {
+button:hover {
   cursor: pointer;
 }
 
