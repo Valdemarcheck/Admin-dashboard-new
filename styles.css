@@ -138,6 +138,7 @@ nav .row {
 }
 
 .left h2 {
+  margin-top: 5px;
   font-size: var(--large-font-size);
 }
 .left .pfp {
