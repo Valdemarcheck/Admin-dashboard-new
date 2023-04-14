@@ -34,6 +34,18 @@
   border-radius: 50%;
 }
 
+.card p {
+  color: var(--content-text-clr);
+  max-width: 80%;
+  margin-top: 5px;
+}
+
+.vertical {
+  display: grid;
+  grid-template-rows: var(--large-font-size);
+  align-items: center;
+}
+
 img {
   aspect-ratio: 1/1;
 }
@@ -115,6 +127,7 @@ aside img {
 }
 
 nav {
+  padding: 15px 0;
   background-color: var(--content-bg-clr);
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -143,12 +156,6 @@ nav .row {
 .left {
   grid-template-columns: auto minmax(20%, 400px);
   justify-content: start;
-}
-
-.left .vertical {
-  display: grid;
-  grid-template-rows: var(--large-font-size);
-  align-items: center;
 }
 
 .left .pfp {
@@ -225,10 +232,18 @@ main .column.left {
 main .column.right {
   display: grid;
   grid-template-rows: var(--medium-font-size) 1fr var(--medium-font-size) 1fr;
+  justify-items: center;
+}
+
+main .column.right > * {
+  width: min(100%, 300px);
+}
+
+main .column.right h2 {
+  text-align: left;
 }
 
 main .column > div {
-  background-color: #1992d4;
   height: 100%;
 }
 
@@ -251,12 +266,6 @@ main .column > div {
   row-gap: 10px;
 }
 
-.cards-section .card p {
-  color: var(--content-text-clr);
-  max-width: 80%;
-  margin-top: 5px;
-}
-
 .cards-section .card .actions {
   display: grid;
   grid-template-columns: repeat(3, 24px);
@@ -272,6 +281,43 @@ main .column > div {
 .action-button {
   background: none;
   border: none;
+}
+
+.announcements-section,
+.trending-section {
+  background-color: var(--aside-text-clr);
+  display: grid;
+  grid-auto-rows: 1fr;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.announcements-section .card {
+  background-color: var(--aside-text-clr);
+  padding-left: 1vw;
+}
+
+.announcements-section .card p {
+  margin-top: 5px;
+  max-width: 300px;
+}
+
+.trending-section .card {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.trending-section .card img {
+  height: 70%;
+}
+
+.trending-section .vertical p:first-child {
+  color: var(--headings-text-clr);
+  font-size: calc(var(--medium-font-size) - 2px);
 }
 
 /* INTERACTIVITY */
