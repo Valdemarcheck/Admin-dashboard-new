@@ -112,7 +112,6 @@ nav {
   display: grid;
   grid-template-rows: 1fr 1fr;
   row-gap: 5px;
-  padding: 5px max(5px, 7%);
 }
 
 nav * {
@@ -120,8 +119,9 @@ nav * {
 }
 
 nav .row {
+  justify-self: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(100px, 600px));
 }
 
 .left,
@@ -180,7 +180,7 @@ button[type="submit"] {
   background-color: var(--aside-bg-clr);
   border: none;
   border-radius: 15px;
-  padding: max(7px, 0.5vw) clamp(2px, 3vw, 40px);
+  padding: 15px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +188,8 @@ button[type="submit"] {
 
 .link-button a {
   color: #e2e8f0;
-  font-size: 110%;
+  line-height: 50%;
+  font-size: 1lh;
 }
 
 main {
