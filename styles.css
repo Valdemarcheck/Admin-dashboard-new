@@ -104,7 +104,6 @@ aside img {
   grid-template-columns: 30px 1fr;
   column-gap: 5px;
   align-items: center;
-  background-color: red;
 }
 
 nav {
