@@ -226,7 +226,7 @@ main * {
 
 .column.right {
   display: grid;
-  grid-template-rows: var(--medium-font-size) 1fr var(--medium-font-size) 1fr;
+  grid-template-rows: var(--medium-font-size) auto var(--medium-font-size) auto 1fr;
   justify-items: center;
   row-gap: 20px;
 }
@@ -293,7 +293,7 @@ main * {
 }
 
 .announcements-section {
-  grid-auto-rows: 1fr 1px;
+  grid-auto-rows: minmax(50px, 150px) 1px;
 }
 
 .announcements-section .separator {
