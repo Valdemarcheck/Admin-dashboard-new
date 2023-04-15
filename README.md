@@ -18,6 +18,13 @@ This my second attempt on admin dashboard project from The Odin Project. It show
 
 ### Navbar icons
 
-- pfp from <a target="_blank" href="https://twitter.com/DoeKawaii?t=Pr21SugpnTg3GYUK3ZKUcg&s=35">@DoeKawaii</a> on Twitter
 - <a target="_blank" href="https://icons8.com/icon/82875/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 - <a target="_blank" href="https://icons8.com/icon/86543/alarm">Alarm</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+### Main icons
+
+- <a target="_blank" href="https://icons8.com/icon/33574/code-fork">Code Fork</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- <a target="_blank" href="https://icons8.com/icon/84871/eye">Eye</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- <a target="_blank" href="https://icons8.com/icon/84925/star">Star</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+> All pfp images are taken either from <a target="_blank" href="https://twitter.com/DoeKawaii?t=Pr21SugpnTg3GYUK3ZKUcg&s=35">@DoeKawaii</a> or <a target="_blank" href="https://twitter.com/furrllow?t=ovQuv5bsMC-xKv1Wnp368A&s=35">@furrllow</a> on Twitter
