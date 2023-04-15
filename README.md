@@ -15,3 +15,9 @@ This my second attempt on admin dashboard project from The Odin Project. It show
 - <a target="_blank" href="https://icons8.com/icon/zTSkVnVQ0nYV/settings">Settings</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 - <a target="_blank" href="https://icons8.com/icon/83361/help">Help</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 - <a target="_blank" href="https://icons8.com/icon/85761/protect">Protect</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+### Navbar icons
+
+- pfp from <a target="_blank" href="https://twitter.com/DoeKawaii?t=Pr21SugpnTg3GYUK3ZKUcg&s=35">@DoeKawaii</a> on Twitter
+- <a target="_blank" href="https://icons8.com/icon/82875/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- <a target="_blank" href="https://icons8.com/icon/86543/alarm">Alarm</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

@@ -149,18 +149,26 @@ nav .row {
   column-gap: 5%;
 }
 
+nav .row img {
+  height: 1.5lh;
+}
+
 .left {
   grid-template-columns: auto minmax(20%, 400px);
   justify-content: start;
 }
 
-.left .pfp {
-  height: 50%;
+.row:last-child .left .pfp {
+  height: 4lh;
 }
 
 .right {
   grid-template-columns: repeat(3, auto);
   justify-content: end;
+}
+
+.row:first-child .right .pfp {
+  height: 2.5lh;
 }
 
 input[type="search"] {
