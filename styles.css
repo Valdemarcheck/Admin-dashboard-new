@@ -89,27 +89,17 @@ aside {
   row-gap: max(20px, var(--preferred-gap));
 }
 
-aside h1 {
-  font-size: calc(var(--large-font-size) + 0.6rem);
-}
-
 aside * {
   color: var(--aside-text-clr);
   font-size: var(--large-font-size);
 }
 
-aside img {
-  height: 90%;
+aside .heading * {
+  font-size: calc(var(--large-font-size) + 0.6rem);
 }
 
-.heading img {
-  height: 100%;
-}
-
-.heading,
-.aside-list {
-  display: block;
-  width: 90%;
+.aside-list li * {
+  font-size: var(--large-font-size);
 }
 
 .aside-list {
@@ -122,9 +112,14 @@ aside img {
 .heading,
 .aside-list li {
   display: grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: 32px 1fr;
   align-items: center;
-  column-gap: max(30px, 0.5lh);
+  column-gap: 0.5lh;
+}
+
+aside img {
+  height: 1lh;
+  margin: 0 auto;
 }
 
 nav {
