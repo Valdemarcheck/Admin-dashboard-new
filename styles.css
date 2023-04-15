@@ -25,6 +25,8 @@
   --medium-font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
 
+/* LAYOUT STYLES */
+
 .bold,
 .bold * {
   font-weight: 700;
@@ -70,8 +72,6 @@ h2 {
 h3 {
   font-size: var(--medium-font-size);
 }
-
-/* LAYOUT STYLES */
 
 body {
   width: 100%;
@@ -191,7 +191,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-button[type="submit"],
+button,
 .action-button {
   appearance: none;
   background: none;
@@ -345,16 +345,21 @@ main * {
 
 /* INTERACTIVITY */
 
-button:hover {
+button,
+.action-button,
+.link-button,
+.aside-list li a,
+.interactive {
+  transition: filter ease-in 50ms;
   cursor: pointer;
 }
 
-.action-button img:hover {
-  filter: brightness(3);
+.action-button:hover {
+  filter: brightness(2);
 }
 
-.action-button img:active {
-  filter: brightness(0);
+.action-button:active {
+  filter: brightness(0.9);
 }
 
 .link-button:hover {
@@ -370,11 +375,7 @@ button:hover {
 }
 
 .interactive:hover {
-  filter: brightness(2);
-}
-
-.interactive:active {
-  filter: brightness(0.95);
+  filter: brightness(1.5);
 }
 
 /* Remove default black outline on focus */
