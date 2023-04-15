@@ -315,7 +315,7 @@ main * {
 
 .announcements-section .card p {
   margin-top: 5px;
-  max-width: 300px;
+  width: 95%;
   position: relative;
 }
 
