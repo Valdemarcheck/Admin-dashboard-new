@@ -16,10 +16,10 @@
   --headings-text-clr: #131313;
   --aside-text-clr: #fff;
 
-  --aside-bg-clr: #1992d4;
+  --aside-bg-clr: #4f46e5;
   --main-bg-clr: #e2e8f0;
   --content-bg-clr: #fff;
-  --card-side-clr: #f0b429;
+  --card-side-clr: #2bb381;
 
   --large-font-size: clamp(1rem, 2vw, 1.8rem);
   --medium-font-size: clamp(0.8rem, 2vw, 1.3rem);
@@ -252,7 +252,7 @@ main * {
 }
 
 .cards-section .card {
-  background-color: var(--aside-text-clr);
+  background-color: var(--content-bg-clr);
   border-left: 7px solid var(--card-side-clr);
   border-radius: 8px;
   padding: 5%;
